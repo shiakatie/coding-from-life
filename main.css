@@ -1,0 +1,177 @@
+/*
+  Coding from Life – Sketch 1: fixed layout
+
+  For sketch 1 you'll be positioning elements relative to an element with a fixed
+  width and height. For this sketch you can position elements by using pixel values.
+*/
+
+body {
+  background-color: black;
+}
+
+
+.frame {
+  width: 1000px;
+  height: 600px;
+  background: #FAF8E1;
+  margin: 30px auto;
+  position: relative;
+}
+
+/* Your CSS goes here */
+.table-cutout-1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-top: 100px solid #1B74FF;
+	border-left: 200px solid transparent;
+}
+
+.table-cutout-2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 200px solid #1B74FF;
+  border-right: 100px solid transparent;
+}
+
+.squash {
+  position: absolute;
+  width: 200px;
+  height: 130px;
+  background-image: radial-gradient(circle at right, #F97A14 , #FEE542);
+  border-radius: 90% 50% 50% 50% / 60% 60% 90% 90%;
+  bottom: 120px;
+  left: 250px;
+  z-index: 1;
+}
+
+.squash-stem {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  background-image: linear-gradient(to right, #322D06 , #5D5723);
+  top: 50px;
+  right: -6px;
+  border-radius: 90% 50% 50% 50% / 60% 60% 40% 90%;
+  background-color: #4F470F;
+  z-index: 2;
+}
+
+.red-vegetable {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  transform: rotate(-10deg);
+  background-color: #D21313;
+  bottom: 60px;
+  left: 550px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  z-index: 1;
+}
+
+.red-upper-mound {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #D21313;
+  top: -10px;
+  right: 80px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  z-index: 2;
+}
+
+.shadow {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  background-color: black;
+  opacity: 30%;
+  bottom: -70px;
+  right: 220px;
+  filter: blur(5px);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+
+.red-stem {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  background-color: #46330D;
+  top: 10px;
+  right: 30px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  z-index: 3;
+}
+
+.vase {
+  position: absolute;
+  width: 170px;
+  height: 360px;
+  background-color: white;
+  opacity: 0.8;
+  transform: skew(4deg);
+  top: 0px;
+  left: 360px;
+  border-radius: 0 0 40px 40px;
+  z-index: 0;
+}
+
+.base {
+  position: absolute;
+  height:60px;
+  width:170px;
+  border-radius: 90px 90px 0 0;
+  background-color: white;
+  opacity: 0.8;
+  bottom: -50px;
+}
+
+.stem-1 {
+  position: absolute;
+  width: 10px;
+  height: 340px;
+  background: green;
+  transform: rotate(10deg);
+  left: 100px;
+  bottom: 0px;
+}
+
+.stem-2 {
+  position: absolute;
+  width: 10px;
+  height: 340px;
+  background: green;
+  transform: rotate(10deg);
+  left: 70px;
+  bottom: 4px;
+}
+
+.stem-3 {
+  position: absolute;
+  width: 10px;
+  height: 340px;
+  background: green;
+  transform: rotate(-10deg);
+  left: 100px;
+  bottom: 0px;
+}
+
+.stem-4 {
+  position: absolute;
+  width: 10px;
+  height: 340px;
+  background: green;
+  transform: rotate(-5deg);
+  left: 40px;
+  bottom: 0px;
+}
+
+
+ 
